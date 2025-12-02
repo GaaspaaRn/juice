@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -37,7 +37,7 @@
 
             <div class="header-actions">
                 <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                    class="btn btn-primary">
+                    class="btn btn-primary desktop-btn">
                     Comprar Ingresso
                 </a>
                 <button class="mobile-menu-btn" aria-label="Menu">
@@ -61,102 +61,107 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="video-background">
-                <video autoplay muted loop playsinline>
-                    <source src="juice-hero.mp4" type="video/mp4">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="public/hero/juice-hero.mp4" type="video/mp4">
                 </video>
                 <div class="overlay"></div>
             </div>
 
             <div class="container hero-content">
-                <span class="tag">#ÉJUICEbaby • JOINVILLE</span>
-                <h1>
-                    <span class="desktop-break">A MAIOR REVOADA<br>DE JOINVILLE</span>
-                    <span class="mobile-break">A MAIOR<br>REVOADA DE<br>JOINVILLE</span>
-                </h1>
+
+                <h1>É JUICE BABY</h1>
                 <p>Hiphop, funk e megafunk na LOFI 220.</p>
                 <div class="hero-btns">
                     <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
                         class="btn btn-primary btn-lg">
                         GARANTIR INGRESSO
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+gostaria+de+fazer+uma+reserva+para+comemorar+meu+anivers%C3%A1rio+na+*JUICE*!&type=phone_number&app_absent=0"
+                    <a href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+gostaria+de+fazer+uma+reserva+de+camarote+na+*JUICE*!&type=phone_number&app_absent=0"
                         target="_blank" class="btn btn-outline btn-lg">
-                        COMEMORAR ANIVERSÁRIO
+                        RESERVAR CAMAROTE
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Lineup Section -->
+        <!-- Lineup & Map Section -->
         <section id="programacao" class="section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header center">
                     <h2>PROGRAMAÇÃO</h2>
-                    <div class="line"></div>
                 </div>
 
-                <div class="lineup-wrapper">
-                    <button class="carousel-arrow carousel-prev" aria-label="Anterior">‹</button>
-                    <div class="lineup-grid">
-                        <div class="artist-card active">
-                            <div class="artist-image">
-                                <img src="assets/img/diguera.jpg" alt="Diguera" loading="lazy">
+                <div class="programacao-grid">
+                    <!-- Carousel Column -->
+                    <div class="carousel-column">
+                        <div class="carousel-container">
+                            <div class="carousel-perspective">
+                                <div class="carousel-wrapper">
+                                    <div class="artist-card-3d" data-name="DIGUERA">
+                                        <img src="assets/img/diguera.jpg" alt="Diguera">
+                                    </div>
+                                    <div class="artist-card-3d" data-name="LUCAS H.">
+                                        <img src="assets/img/lucas-h.jpg" alt="Lucas H.">
+                                    </div>
+                                    <div class="artist-card-3d" data-name="RODRIZ">
+                                        <img src="assets/img/rodriz.jpg" alt="Rodriz">
+                                    </div>
+                                    <div class="artist-card-3d" data-name="ZATELLI">
+                                        <img src="assets/img/zatelli.jpg" alt="Zatelli">
+                                    </div>
+                                </div>
                             </div>
-                            <h3>DIGUERA</h3>
+                            <button class="carousel-arrow carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-arrow carousel-next" aria-label="Próximo">›</button>
                         </div>
-                        <div class="artist-card next">
-                            <div class="artist-image">
-                                <img src="assets/img/lucas-h.jpg" alt="Lucas H." loading="lazy">
+
+                        <div class="artist-info">
+                            <h3 class="artist-name-display">DIGUERA</h3>
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
                             </div>
-                            <h3>LUCAS H.</h3>
-                        </div>
-                        <div class="artist-card">
-                            <div class="artist-image">
-                                <img src="assets/img/rodriz.jpg" alt="Rodriz" loading="lazy">
-                            </div>
-                            <h3>RODRIZ</h3>
-                        </div>
-                        <div class="artist-card prev">
-                            <div class="artist-image">
-                                <img src="assets/img/zatelli.jpg" alt="Zatelli" loading="lazy">
-                            </div>
-                            <h3>ZATELLI</h3>
                         </div>
                     </div>
-                    <button class="carousel-arrow carousel-next" aria-label="Próximo">›</button>
+
+                    <!-- Map Column -->
+                    <div class="map-column">
+                        <h3 class="map-title">MAPA</h3>
+                        <div class="map-container-programacao">
+                            <img src="assets/img/map.png" alt="Mapa do Evento Juice na LOFI 220" class="event-map">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-container center mt-4">
+                    <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
+                        class="btn btn-primary btn-lg btn-buy">
+                        COMPRAR INGRESSO
+                    </a>
+                    <p class="small-text mt-2"><a
+                            href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+gostaria+de+fazer+uma+reserva+de+camarote+na+*JUICE*!&type=phone_number&app_absent=0"
+                            target="_blank">Procurando um camarote? chama aqui</a></p>
                 </div>
             </div>
         </section>
 
-        <!-- Map & Location Section -->
+        <!-- Location Section (Map removed) -->
         <section id="destaques" class="section bg-darker">
             <div class="container">
-                <div class="dual-grid">
-                    <div class="content-block">
-                        <h2>MAPA DO EVENTO</h2>
-                        <p>Confira a estrutura da LOFI 220 para a Juice.</p>
-                        <div class="map-container">
-                            <img src="assets/img/map.png" alt="Mapa do Evento Juice na LOFI 220" class="event-map">
-                        </div>
-                        <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                            class="btn btn-primary full-width mt-4">
-                            COMPRAR INGRESSO
-                        </a>
+                <div class="content-block center">
+                    <h2>LOCALIZAÇÃO</h2>
+                    <p>R. Gothard Kaesemodel, 220 - Anita Garibaldi</p>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3231732690074!2d-48.8598157!3d-26.3160329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb1231885d1d7%3A0x8422aaff0ae816f0!2sLOFI%20220!5e0!3m2!1spt-BR!2sbr!4v1764179689476!5m2!1spt-BR!2sbr"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="content-block">
-                        <h2>LOCALIZAÇÃO</h2>
-                        <p>R. Gothard Kaesemodel, 220 - Anita Garibaldi</p>
-                        <div class="map-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3231732690074!2d-48.8598157!3d-26.3160329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb1231885d1d7%3A0x8422aaff0ae816f0!2sLOFI%20220!5e0!3m2!1spt-BR!2sbr!4v1764179689476!5m2!1spt-BR!2sbr"
-                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <a href="https://maps.app.goo.gl/ryHMtZ9DnWF4fxXM8" target="_blank"
-                            class="btn btn-outline full-width mt-4">
-                            VER NO MAPA
-                        </a>
-                    </div>
+                    <a href="https://maps.app.goo.gl/ryHMtZ9DnWF4fxXM8" target="_blank" class="btn btn-outline mt-4">
+                        VER NO MAPA
+                    </a>
                 </div>
             </div>
         </section>
