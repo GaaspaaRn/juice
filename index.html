@@ -6,59 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juice | A Maior Revoada de Joinville</title>
     <meta name="description" content="Acontece a 2ª edição da Juice na LOFI 220. Energia, diversão e muito funk!">
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="cursor-glow"></div>
-
-    <!-- Header -->
     <header id="header">
         <div class="container header-content">
-            <a href="#" class="logo-link">
-                <img src="assets/img/juice-logo.png" alt="Juice Logo" class="header-logo">
-            </a>
-
+            <a href="#" class="logo-link"><img src="assets/img/juice-logo.png" alt="Juice Logo" class="header-logo"></a>
             <nav class="desktop-nav">
                 <a href="#programacao">Programação</a>
                 <a href="#historia">História</a>
-                <a href="#destaques">Destaques</a>
                 <a href="#faq">FAQ</a>
                 <a href="https://drive.google.com/drive/folders/16DgiSE7jrYuMxRNbblZoF1ebf_al1ddH"
                     target="_blank">Fotos</a>
             </nav>
-
             <div class="header-actions">
                 <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                    class="btn btn-primary desktop-btn">
-                    Comprar Ingresso
-                </a>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                </button>
+                    class="btn btn-primary desktop-btn">Comprar Ingresso</a>
+                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span></button>
             </div>
         </div>
-
-        <!-- Mobile Menu -->
         <div class="mobile-menu">
             <a href="#programacao">Programação</a>
             <a href="#historia">História</a>
-            <a href="#destaques">Destaques</a>
             <a href="#faq">FAQ</a>
             <a href="https://drive.google.com/drive/folders/16DgiSE7jrYuMxRNbblZoF1ebf_al1ddH" target="_blank">Fotos</a>
         </div>
     </header>
-
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="video-background">
                 <video autoplay muted loop playsinline preload="metadata">
@@ -66,87 +45,63 @@
                 </video>
                 <div class="overlay"></div>
             </div>
-
             <div class="container hero-content">
                 <h1>IT'S JUICE BABY!</h1>
                 <p>HIP-HOP, FUNK E MEGAFUNK.</p>
                 <div class="hero-btns">
                     <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                        class="btn btn-primary btn-lg">
-                        GARANTIR INGRESSO
-                    </a>
+                        class="btn btn-primary btn-lg">GARANTIR INGRESSO</a>
                     <a href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+gostaria+de+fazer+uma+reserva+de+camarote+na+*JUICE*!&type=phone_number&app_absent=0"
-                        target="_blank" class="btn btn-outline btn-lg">
-                        RESERVAR CAMAROTE
-                    </a>
+                        target="_blank" class="btn btn-outline btn-lg">RESERVAR CAMAROTE</a>
                 </div>
             </div>
         </section>
-
-        <!-- Lineup & Map Section -->
         <section id="programacao" class="section">
             <div class="container">
                 <div class="section-header center">
                     <h2>PROGRAMAÇÃO</h2>
                 </div>
-
                 <div class="programacao-grid">
-                    <!-- Carousel Column -->
                     <div class="carousel-column">
                         <div class="carousel-container">
                             <div class="carousel-perspective">
                                 <div class="carousel-wrapper">
-                                    <div class="artist-card-3d" data-name="DIGUERA">
-                                        <img src="assets/img/diguera.jpg" alt="Diguera">
-                                    </div>
-                                    <div class="artist-card-3d" data-name="LUCAS H.">
-                                        <img src="assets/img/lucas-h.jpg" alt="Lucas H.">
-                                    </div>
-                                    <div class="artist-card-3d" data-name="RODRIZ">
-                                        <img src="assets/img/rodriz.jpg" alt="Rodriz">
-                                    </div>
-                                    <div class="artist-card-3d" data-name="ZATELLI">
-                                        <img src="assets/img/zatelli.jpg" alt="Zatelli">
-                                    </div>
+                                    <div class="artist-card-3d" data-name="DIGUERA"><img src="assets/img/diguera.jpg"
+                                            alt="Diguera"></div>
+                                    <div class="artist-card-3d" data-name="LUCAS H."><img src="assets/img/lucas-h.jpg"
+                                            alt="Lucas H."></div>
+                                    <div class="artist-card-3d" data-name="RODRIZ"><img src="assets/img/rodriz.jpg"
+                                            alt="Rodriz"></div>
+                                    <div class="artist-card-3d" data-name="ZATELLI"><img src="assets/img/zatelli.jpg"
+                                            alt="Zatelli"></div>
                                 </div>
                             </div>
                             <button class="carousel-arrow carousel-prev" aria-label="Anterior">‹</button>
                             <button class="carousel-arrow carousel-next" aria-label="Próximo">›</button>
                         </div>
-
                         <div class="artist-info">
                             <h3 class="artist-name-display">DIGUERA</h3>
                             <div class="carousel-dots">
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
+                                <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Map Column -->
                     <div class="map-column">
                         <h3 class="map-title">MAPA DO EVENTO</h3>
-                        <div class="map-container-programacao">
-                            <img src="assets/img/map.png" alt="Mapa do Evento Juice na LOFI 220" class="event-map">
-                        </div>
+                        <div class="map-container-programacao"><img src="assets/img/map.png"
+                                alt="Mapa do Evento Juice na LOFI 220" class="event-map"></div>
                     </div>
                 </div>
-
                 <div class="action-container center mt-4">
                     <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                        class="btn btn-primary btn-lg btn-buy">
-                        COMPRAR INGRESSO
-                    </a>
+                        class="btn btn-primary btn-lg btn-buy">COMPRAR INGRESSO</a>
                     <p class="small-text mt-2"><a
                             href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+gostaria+de+fazer+uma+reserva+de+camarote+na+*JUICE*!&type=phone_number&app_absent=0"
                             target="_blank">Procurando um camarote? chama aqui</a></p>
                 </div>
             </div>
         </section>
-
-        <!-- Location Section (Map removed) -->
         <section id="destaques" class="section bg-darker">
             <div class="container">
                 <div class="content-block center">
@@ -158,14 +113,11 @@
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <a href="https://maps.app.goo.gl/ryHMtZ9DnWF4fxXM8" target="_blank" class="btn btn-outline mt-4">
-                        VER NO MAPA
-                    </a>
+                    <a href="https://maps.app.goo.gl/ryHMtZ9DnWF4fxXM8" target="_blank" class="btn btn-outline mt-4">VER
+                        NO MAPA</a>
                 </div>
             </div>
         </section>
-
-        <!-- History Section -->
         <section id="historia" class="section">
             <div class="container history-grid">
                 <div class="history-text">
@@ -174,34 +126,24 @@
                         da cena musical da cidade. As edições acontecem regularmente na <strong>LOFI 220</strong>, com
                         eventos marcados como "uma das melhores baladas de Joinville" e celebrações de aniversário que
                         comprovam sua longevidade e conexão com o público.</p>
-
                     <div class="history-photos-container">
-                        <div class="polaroid-card">
-                            <img src="assets/img/historia/party1.webp" alt="Juice Party Crowd">
+                        <div class="polaroid-card"><img src="assets/img/historia/party1.webp" alt="Juice Party Crowd">
                         </div>
-                        <div class="polaroid-card">
-                            <img src="assets/img/historia/party2.webp" alt="Juice Party Stage">
+                        <div class="polaroid-card"><img src="assets/img/historia/party2.webp" alt="Juice Party Stage">
                         </div>
-                        <div class="polaroid-card">
-                            <img src="assets/img/historia/party3.webp" alt="Juice Party Vibes">
+                        <div class="polaroid-card"><img src="assets/img/historia/party3.webp" alt="Juice Party Vibes">
                         </div>
                     </div>
-
                     <a href="https://www.pensanoevento.com.br/baladas/89526/juice-2000s" target="_blank"
-                        class="btn btn-primary mt-4">
-                        COMPRAR INGRESSO
-                    </a>
+                        class="btn btn-primary mt-4">COMPRAR INGRESSO</a>
                 </div>
             </div>
         </section>
-
-        <!-- FAQ Section -->
         <section id="faq" class="section bg-darker">
             <div class="container small-container">
                 <div class="section-header center">
                     <h2>PERGUNTAS FREQUENTES</h2>
                 </div>
-
                 <div class="accordion">
                     <div class="accordion-item">
                         <button class="accordion-header">Qual o local do evento?</button>
@@ -232,12 +174,10 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="assets/img/juice-logo.png" alt="Juice Logo" style="height: 40px; opacity: 0.8;">
-            </div>
+            <div class="footer-logo"><img src="assets/img/juice-logo.png" alt="Juice Logo"
+                    style="height: 40px; opacity: 0.8;"></div>
             <div class="footer-links">
                 <a href="https://api.whatsapp.com/send/?phone=5547992205585&text=Ol%C3%A1,+tudo+bom?&type=phone_number&app_absent=0"
                     target="_blank">Fale Conosco</a>
@@ -246,7 +186,6 @@
             </div>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
 
