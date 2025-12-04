@@ -7,14 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     mobileMenu.classList.toggle('active');
-    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
   });
 
   mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
       menuBtn.classList.remove('active');
       mobileMenu.classList.remove('active');
-      document.body.style.overflow = '';
     });
   });
 
