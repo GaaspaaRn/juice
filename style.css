@@ -334,100 +334,25 @@ p {
   gap: 3rem;
 }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 350px;
-  height: 400px;
-  margin: 0 auto;
-  perspective: 1000px;
-}
-
-.carousel-perspective {
+.programacao-image-container {
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-}
-
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
-}
-
-.artist-card-3d {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 20px;
-  overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-
-.artist-card-3d img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.artist-info {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.artist-name-display {
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--border);
-  cursor: pointer;
-}
-
-.dot.active {
-  background: var(--primary);
-}
-
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: var(--primary);
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 100;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.carousel-prev {
-  left: 5px;
+.programacao-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
-.carousel-next {
-  right: 5px;
+.text-center {
+  text-align: center;
 }
 
 .map-column {
@@ -635,18 +560,6 @@ footer {
 
   .header-logo {
     height: 52px;
-  }
-
-  .carousel-container {
-    max-width: 240px;
-    height: 310px;
-  }
-
-  .carousel-arrow {
-    font-size: 1.5rem;
-    width: 30px;
-    height: 30px;
-    background: rgba(0, 0, 0, 0.6);
   }
 
   .history-photos-container {
