@@ -297,11 +297,26 @@ p {
   z-index: 2;
   text-align: center;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  margin-bottom: 0;
 }
 
 .hero p {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.9);
 }
 
