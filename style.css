@@ -654,3 +654,20 @@ footer {
     z-index: 3;
   }
 }
+.logo-link,
+.mobile-menu-btn {
+  position: relative;
+}
+
+.logo-link::before,
+.mobile-menu-btn::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 999px;
+  z-index: -1;
+
+}
