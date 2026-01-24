@@ -685,6 +685,6 @@ footer {
   text-transform: uppercase;
    text-shadow: 0 0 10px rgba(188, 255, 59, 0.15);
   letter-spacing: 1px;
-  color: var(--text-muted);
+  color: #fff;
   margin-bottom: 1rem;
 }
