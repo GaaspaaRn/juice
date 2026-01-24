@@ -160,11 +160,8 @@ p {
 }
 
 .header-logo {
-  height: 40px;
+  height: 34px;
   width: auto;
-  filter:
-    drop-shadow(0 0 10px rgba(188, 255, 59, 0.35))
-    drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45));
 }
 
 .desktop-nav {
@@ -197,7 +194,6 @@ p {
   flex-direction: column;
   gap: 6px;
   z-index: 1001;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
 }
 
 .mobile-menu-btn span {
@@ -659,15 +655,26 @@ footer {
   position: relative;
 }
 
+.logo-link,
+.mobile-menu-btn {
+  position: relative;
+  isolation: isolate;
+}
+
 .logo-link::before,
 .mobile-menu-btn::before {
   content: '';
   position: absolute;
-  inset: -10px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  inset: -6px; /* círculo menor */
   border-radius: 999px;
-  z-index: -1;
 
+  background: rgba(10, 10, 11, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.45),
+    0 0 12px rgba(188, 255, 59, 0.25);
+
+  z-index: -1;
 }
