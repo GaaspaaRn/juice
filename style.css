@@ -162,6 +162,9 @@ p {
 .header-logo {
   height: 40px;
   width: auto;
+  filter:
+    drop-shadow(0 0 10px rgba(188, 255, 59, 0.35))
+    drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45));
 }
 
 .desktop-nav {
@@ -194,6 +197,7 @@ p {
   flex-direction: column;
   gap: 6px;
   z-index: 1001;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
 }
 
 .mobile-menu-btn span {
