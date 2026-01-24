@@ -678,3 +678,13 @@ footer {
 
   z-index: -1;
 }
+
+.reserva-call {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+   text-shadow: 0 0 10px rgba(188, 255, 59, 0.15);
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
