@@ -763,11 +763,17 @@ footer {
 
 .gruv-button div {
   background: var(--gruv-background);
-  padding: 0.1em 0.6em;
+  padding: 0.15em 0.6em 0.1em 0.6em;
+  /* Added slightly more top padding to push text down visually */
   border-radius: calc(var(--gruv-border-radius) - var(--gruv-border-size));
   color: var(--gruv-foreground);
   font-weight: bold;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  /* Force line-height */
 }
 
 /* Development Label Container */
