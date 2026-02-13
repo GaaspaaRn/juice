@@ -308,7 +308,7 @@ p {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 0.1rem; 
+  margin-bottom: 0.1rem;
 }
 
 .hero h1 {
@@ -578,8 +578,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 
-    align-items: center;      
-    justify-items: center;   
+    align-items: center;
+    justify-items: center;
   }
 }
 
@@ -650,6 +650,7 @@ footer {
     z-index: 3;
   }
 }
+
 .logo-link,
 .mobile-menu-btn {
   position: relative;
@@ -665,7 +666,8 @@ footer {
 .mobile-menu-btn::before {
   content: '';
   position: absolute;
-  inset: -6px; /* círculo menor */
+  inset: -6px;
+  /* círculo menor */
   border-radius: 999px;
 
   background: rgba(10, 10, 11, 0.45);
@@ -683,8 +685,98 @@ footer {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
-   text-shadow: 0 0 10px rgba(188, 255, 59, 0.15);
+  text-shadow: 0 0 10px rgba(188, 255, 59, 0.15);
   letter-spacing: 1px;
   color: var(--text-muted);
   margin-bottom: 1rem;
+}
+
+/* GRUV Button Styles */
+@property --gruv-border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --gruv-border-angle-2 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 90deg;
+}
+
+@property --gruv-border-angle-3 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 180deg;
+}
+
+.gruv-button-wrapper {
+  --gruv-bright-blue: rgb(0, 100, 255);
+  --gruv-bright-green: rgb(0, 255, 0);
+  --gruv-bright-red: rgb(255, 0, 0);
+  --gruv-background: black;
+  --gruv-foreground: white;
+  --gruv-border-size: 2px;
+  --gruv-border-radius: 0.75em;
+}
+
+@keyframes rotateBackground {
+  to {
+    --gruv-border-angle-1: 360deg;
+  }
+}
+
+@keyframes rotateBackground2 {
+  to {
+    --gruv-border-angle-2: -270deg;
+  }
+}
+
+@keyframes rotateBackground3 {
+  to {
+    --gruv-border-angle-3: 540deg;
+  }
+}
+
+.gruv-button {
+  --gruv-border-angle-1: 0deg;
+  --gruv-border-angle-2: 90deg;
+  --gruv-border-angle-3: 180deg;
+  color: inherit;
+  font-size: 0.9rem;
+  font-family: inherit;
+  border: 0;
+  padding: var(--gruv-border-size);
+  display: flex;
+  width: max-content;
+  border-radius: var(--gruv-border-radius);
+  background-color: transparent;
+  background-image: conic-gradient(from var(--gruv-border-angle-1) at 10% 15%, transparent, var(--gruv-bright-blue) 10%, transparent 30%, transparent), conic-gradient(from var(--gruv-border-angle-2) at 70% 60%, transparent, var(--gruv-bright-green) 10%, transparent 60%, transparent), conic-gradient(from var(--gruv-border-angle-3) at 50% 20%, transparent, var(--gruv-bright-red) 10%, transparent 50%, transparent);
+  animation: rotateBackground 3s linear infinite, rotateBackground2 8s linear infinite, rotateBackground3 13s linear infinite;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.gruv-button:hover {
+  color: inherit;
+}
+
+.gruv-button div {
+  background: var(--gruv-background);
+  padding: 0.5em 1.5em;
+  border-radius: calc(var(--gruv-border-radius) - var(--gruv-border-size));
+  color: var(--gruv-foreground);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Development Label Container */
+.dev-label-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
