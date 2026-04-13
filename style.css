@@ -334,11 +334,11 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: var(--transition);
   border: 2px solid transparent;
@@ -368,8 +368,8 @@ p {
 }
 
 .btn-lg {
-  padding: 1rem 3rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
 }
 
 .programacao-grid {
